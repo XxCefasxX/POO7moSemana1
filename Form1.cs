@@ -12,6 +12,9 @@ namespace IntroPOO
 {
     public partial class Form1 : Form
     {
+        //realizar las operaciones matematcas resta, multiplicacion y divicion
+        /*crear otra clase en la que realicen las sentencias de control y que 
+        hagan uso de los operadores relacionales y logicos*/
         public Form1()
         {
             InitializeComponent();
@@ -21,14 +24,22 @@ namespace IntroPOO
         {
             var num1 = 7;
             var num2 = 5;
-            int resultado = Suma(num1, num2);
-
+            Operaciones op=new Operaciones();
+            int resultado = op.Suma(num1, num2);
+            
         }
 
-        private int Suma(int a, int b)
+       
+    }
+    class Operaciones
+    {
+        public int Suma(int a, int b)
         {
             int toalsuma = a + b;
             return toalsuma;
         }
+       
     }
+
+
 }
